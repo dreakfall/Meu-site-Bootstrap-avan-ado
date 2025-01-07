@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarShow - Concecionaria</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    #caroulselId .carousel-item img {
+        width: 100%;
+        display: block;
+    }
+
+    header {
+        background-color: #e5f4fd;
+    }
+
+    body {
+        background-color: rgba(200, 200, 200, 0.1);
+    }
+
+
+    .navbar-nav .nav-link.active {
+        color: #fff;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    footer h3 {
+        margin-bottom: 20px;
+    }
+
+    .display-6 {
+        font-size: x-large;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    #contato {
+        min-height: 30vh;
+        background-color: #e5f4fd;
+    }
+
+    header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #produtos h2 {
+        padding: 15px;
+        text-align: start;
+        text-decoration: solid;
+    }
+
+    .logo {
+        font-family: 'Poppins', sans-serif;
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: #ff6347;
+        background: linear-gradient(45deg, #ff6347, #20b2aa);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+    }
+
+    @media (max-width: 768px) {
+        .logo {
+            font-size: 2.5rem;
+        }
+    }
+</style>
+
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="100" tabindex="0">
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <h1 class="logo">Concessionária CarShow</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carouselId" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="1000" class="carousel-item active">
+                    <img class="d-block w-100" src="Corolla Carousel.jpg">
+                    <div class="carousel-caption">
+                        <h2>Corolla</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="1000" class="carousel-item">
+                    <img class="d-block w-100" src="Dodge Ram Carousel.jpg">
+                    <div class="carousel-caption">
+                        <h2>Dodge Ram</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="1000" class="carousel-item">
+                    <img class="d-block w-100" src="Cooper carousel.jpg">
+                    <div class="carousel-caption">
+                        <h2>Cooper</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="1000" class="carousel-item">
+                    <img class="d-block w-100" src="Fusca Carousel.jpg">
+                    <div class="carousel-caption">
+                        <h2>Fusca Sport</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carouselId" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carouselId" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+        </div>
+    </div>
+    <section id="sobre">
+        <h2 class="display-5">Sobre Nós</h2>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-8 col-sm-12" style="margin-left: -15%;">
+                    <img src="car_showroom_1300x1000.jpg" alt="Fachada CarShow" class="img-fluid"
+                        style="max-width: 100%; height: auto; max-height: 1000px; margin-left: -6%;">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <p class="display-6">
+                        A CarShow é uma concessionária moderna que oferece uma experiência diferenciada na compra de
+                        veículos de luxo e alto desempenho. Com um showroom elegante e bem iluminado, destaca os
+                        detalhes dos modelos esportivos, SUVs e sedans disponíveis.
+
+                        A equipe de consultores é altamente qualificada, garantindo um atendimento personalizado e
+                        soluções completas, como financiamento e manutenção. A CarShow também valoriza a
+                        sustentabilidade, oferecendo opções de carros elétricos e híbridos.
+
+                        Com foco na inovação e na satisfação dos clientes, a CarShow transforma a compra de um carro em
+                        uma experiência única e memorável.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2 class="container mt-4 display-5"><strong> Produtos</strong></h2>
+        <div>
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="FIAT STRADA.jpg" alt="STRADA 1.0 Turbo 200 Ultra CD" class="img-fluid w-100">
+                    <div>
+                        <h5>FIAT STRADA</h5>
+                        <p>A **Fiat Strada** é uma picape compacta versátil e robusta, ideal para trabalho e lazer.
+                            Disponível em versões cabine simples ou dupla, oferece motorizações eficientes e
+                            capacidade
+                            de carga destacada. Conta com tecnologia moderna, como central multimídia Uconnect, e
+                            recursos de segurança avançados. Um veículo confiável para quem busca praticidade e
+                            desempenho.</p>
+                        <button class="btn btn-success w-50 btn-buy"
+                            onclick="addToCart('Fiat Strada', 128900)">Adicionar
+                            ao carrinho - R$ 128.900,00</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="VOLKSWAGEN NIVUS.jpg" alt="NIVUS 1.0 200 TSI Highline" class="img-fluid w-100">
+                    <div>
+                        <h5>VOLKSWAGEN NIVUS</h5>
+                        <p>O **Volkswagen Nivus 1.0 200 TSI Highline** é um SUV compacto com motor turbo de 128 cv e
+                            design moderno. Oferece desempenho ágil, economia de combustível e ótimo conforto
+                            interno.
+                            Destaque para a central multimídia VW Play e conectividade avançada. Combina segurança,
+                            tecnologia e estilo para o dia a dia.</p>
+                        <button class="btn btn-success w-50 btn-buy"
+                            onclick="addToCart('VOLKSWAGEN NIVUS', 139990)">Adicionar
+                            ao carrinho - R$ 139.990,00</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="Mini COOPER 2.0 16V Twinpower S.jpg" alt="COOPER 2.0 16V Twinpower S"
+                        class="img-fluid w-100">
+                    <div>
+                        <h5>Mini COOPER 2.0</h5>
+                        <p>O **Mini Cooper 2.0 16V TwinPower S** é um hatch premium com design icônico e motor turbo
+                            de
+                            192 cv, garantindo desempenho esportivo e agilidade. Oferece interior sofisticado, com
+                            materiais de alta qualidade e tecnologia avançada. Destaque para a dirigibilidade
+                            dinâmica e
+                            o estilo personalizado. Perfeito para quem busca diversão ao volante com exclusividade.
+                        </p>
+                        <button class="btn btn-success w-50 btn-buy"
+                            onclick="addToCart('Mini COOPER 2.0 16V Twinpower S', 229273)">Adicionar
+                            ao carrinho - R$ 229.273,00</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="contato">
+            <div class="contact-container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 footer-info">
+                        <h3 class="display-5">Contato</h3>
+                        <address class="display-6"><strong>Endereço:</strong> Rua Exemplo,123, São Paulo, SP</address>
+                        <address class="display-6"><strong>Telefone:</strong> (11) 1234-5678</address>
+                        <address class="display-6"><strong>E-mail:</strong> contato@exemplo.com</address>
+                    </div>
+
+                    <div class="col-md-6 text-md-end footer-social">
+                        <a href="https://facebook.com" target="_black" aria-label="Facebook"><i
+                                class="bi vi-facebook fs-1"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
+                                class="bi bi-twitter fs-1"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                                class="bi bi-instagram fs-1"></i></a>
+                        <a href="https://" target="_blank" aria-label="linkedIn"><i class="bi bi-linkedin fs-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+
+
+</html>
